@@ -1,0 +1,45 @@
+/* General */
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+    color: rgba(255, 255, 255, 0.87) !important;
+}
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.23) !important;
+}
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: #ffffff !important;
+}
+
+
+/* Radio group */
+.css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked {
+    color: #FF28DF !important;
+}
+.css-vqmohf-MuiButtonBase-root-MuiRadio-root {
+    color: rgba(255, 255, 255, 0.23) !important;
+}
+
+
+/* Correo y contraseña */
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+    color: rgba(255, 255, 255, 0.87) !important;
+}
+
+
+/* Nombre y apellido */
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+    color: rgba(255, 255, 255, 0.87) !important;
+}
+
+
+/* Nacimiento */
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+    color: rgba(255, 255, 255, 0.87) !important;
+}
+
+/* Icon */
+.css-i4bv87-MuiSvgIcon-root{
+    color: white !important;
+}

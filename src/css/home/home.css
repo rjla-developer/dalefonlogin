@@ -8,7 +8,6 @@
   width: 7rem;
   height: 2rem;
   border: none;
-  /* box-shadow: 3px 4px 2px rgba(0, 0, 0, 0.4); */
   background-color: white;
 }
 
@@ -31,23 +30,23 @@
 } */
 
 .swiper-pagination-bullet {
-  background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255) !important;
 }
 
 .swiper-pagination-bullet-active {
-  background: #ffffff;
+  background: #ffffff !important;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #3e0578;
+  color: #3e0578 !important;
   height: 1rem;
 }
 
 /* --------------- Estilos empezando en lg ----------- */
 @media (min-width: 992px) {
   .title-home {
-    color: #fefefe;
+    color: #fefefe ;
     font-size: 68px;
     font-style: normal;
   }

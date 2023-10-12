@@ -2,7 +2,7 @@ import { Georama } from "next/font/google";
 
 //CSS:
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./globals.css";
+import "../css/globals.css";
 
 const inter = Georama({ subsets: ["latin"] });
 

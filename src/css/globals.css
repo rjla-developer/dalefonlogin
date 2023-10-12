@@ -6,11 +6,11 @@ body {
 
 /* Background color */
 .background-rose{
-    background-color: #FF28DF;
+    background-color: #FF28DF !important;
 }
 
 .background-purple{
-    background-color: #3E0578;
+    background-color: #3E0578 !important;
 }
 
 
