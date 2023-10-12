@@ -1,12 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import "../../css/user/perfil.css";
+import Link from "next/link";
 
 //Material UI
 import Avatar from "@mui/material/Avatar";
 
 //Icons
 import { AiOutlineCloudUpload } from "react-icons/ai";
+import GenderChart from "@/components/user/GenderChart";
 
 function Perfil({ params }) {
   const [contentNav, setContentNav] = useState("Home");
@@ -21,20 +23,44 @@ function Perfil({ params }) {
   });
   const users = [
     {
-      name: 'Nombre1',
-      lastname: 'Apellido1',
-      user: 'Usuario1',
-      date: '01/01/2000',
-      gender: 'Masculino',
-      status: 'Activo',
+      name: "Nombre1",
+      lastname: "Apellido1",
+      user: "Usuario1",
+      date: "01/01/2000",
+      gender: "Masculino",
+      status: "Activo",
     },
     {
-      name: 'Nombre2',
-      lastname: 'Apellido2',
-      user: 'Usuario2',
-      date: '02/02/2001',
-      gender: 'Femenino',
-      status: 'Inactivo',
+      name: "Nombre1",
+      lastname: "Apellido1",
+      user: "Usuario1",
+      date: "01/01/2000",
+      gender: "Masculino",
+      status: "Activo",
+    },
+    {
+      name: "Nombre1",
+      lastname: "Apellido1",
+      user: "Usuario1",
+      date: "01/01/2000",
+      gender: "Masculino",
+      status: "Activo",
+    },
+    {
+      name: "Nombre1",
+      lastname: "Apellido1",
+      user: "Usuario1",
+      date: "01/01/2000",
+      gender: "Masculino",
+      status: "Activo",
+    },
+    {
+      name: "Nombre2",
+      lastname: "Apellido2",
+      user: "Usuario2",
+      date: "02/02/2001",
+      gender: "Femenino",
+      status: "Inactivo",
     },
   ];
 
@@ -86,11 +112,10 @@ function Perfil({ params }) {
           >
             Usuarios
           </p>
-          <p
-            onClick={() => setContentNav("")}
-            className="cursor-pointer nav-item b-radius-8 text-white fs-5 mb-0"
-          >
-            Cerrar sesión
+          <p className="cursor-pointer nav-item b-radius-8 text-white fs-5 mb-0">
+            <Link href="/" className="text-decoration-none text-white">
+              Cerrar sesión
+            </Link>
           </p>
         </div>
 
@@ -251,30 +276,33 @@ function Perfil({ params }) {
             ) : null}
 
             {contentNav == "User" ? (
-              <table className="b-radius-8 table table-bordered">
-                <thead>
-                  <tr>
-                    <th>Nombre(s)</th>
-                    <th>Apellidos</th>
-                    <th>Usuario</th>
-                    <th>Fecha de nacimiento</th>
-                    <th>Género</th>
-                    <th>Estatus</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {users.map((user, index) => (
-                    <tr key={index}>
-                      <td>{user.name}</td>
-                      <td>{user.lastname}</td>
-                      <td>{user.user}</td>
-                      <td>{user.date}</td>
-                      <td>{user.gender}</td>
-                      <td>{user.status}</td>
+              <>
+                <table className="b-radius-8 table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Nombre(s)</th>
+                      <th>Apellidos</th>
+                      <th>Usuario</th>
+                      <th>Fecha de nacimiento</th>
+                      <th>Género</th>
+                      <th>Estatus</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {users.map((user, index) => (
+                      <tr key={index}>
+                        <td>{user.name}</td>
+                        <td>{user.lastname}</td>
+                        <td>{user.user}</td>
+                        <td>{user.date}</td>
+                        <td>{user.gender}</td>
+                        <td>{user.status}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                <GenderChart users={users} />
+              </>
             ) : null}
           </div>
         </div>
