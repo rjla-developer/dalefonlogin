@@ -14,10 +14,10 @@ pnpm dev
 # or
 bun dev
 
-##
+## Se realizo el proyecto de un login para la empresa de Dalefon. 
 
 </br>
-Se realizo el proyecto de un login para la empresa de Dalefon. 
+
 </br> Node js: v18.17.0.
 </br> Se ocuparon las dependencias:
     </br>"@emotion/react": "^11.11.1",
