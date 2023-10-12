@@ -4,8 +4,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 </br>
 Se realizo el proyecto de un login para la empresa de Dalefon. 
-Node js: v18.17.0.
-Se ocuparon las dependencias:
+</br> Node js: v18.17.0.
+</br> Se ocuparon las dependencias:
     </br>"@emotion/react": "^11.11.1",
     </br>"@emotion/styled": "^11.11.0",
     </br>"@mui/material": "^5.14.13",
@@ -32,6 +32,8 @@ Se ocuparon las dependencias:
 
 ## Computer demonstration:
 ![dalefon](https://github.com/rjla-developer/dalefonlogin/assets/83847147/c9c842b6-3769-4a92-b917-37417a69f758)
+![dalefon m](https://github.com/rjla-developer/dalefonlogin/assets/83847147/2238c579-3378-4c65-a1bd-4505e60c64b9)
+![dalefon h](https://github.com/rjla-developer/dalefonlogin/assets/83847147/2de9c72d-2ab8-4c7e-a409-2a137cc0cf85)
 
 
 
