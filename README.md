@@ -6,25 +6,26 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Se realizo el proyecto de un login para la empresa de Dalefon. 
 Node js: v18.17.0.
 Se ocuparon las dependencias:
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.14.13",
-    "@mui/x-date-pickers": "^6.16.1",
-    "bootstrap": "^5.3.2",
-    "dayjs": "^1.11.10",
-    "next": "13.5.4",
-    "react": "^18",
-    "react-bootstrap": "^2.9.0",
-    "react-dom": "^18",
-    "react-icons": "^4.11.0",
-    "swiper": "^10.3.1",
-    "victory": "^36.6.11"
+    </br>"@emotion/react": "^11.11.1",
+    </br>"@emotion/styled": "^11.11.0",
+    </br>"@mui/material": "^5.14.13",
+    </br>"@mui/x-date-pickers": "^6.16.1",
+    </br>"bootstrap": "^5.3.2",
+    </br>"dayjs": "^1.11.10",
+    </br>"next": "13.5.4",
+    </br>"react": "^18",
+    </br>"react-bootstrap": "^2.9.0",
+    </br>"react-dom": "^18",
+    </br>"react-icons": "^4.11.0",
+    </br>"swiper": "^10.3.1",
+    </br>"victory": "^36.6.11"
 
+</br>
 </br>
 
 ![Tabla para lenguajes usados](https://github.com/rjla-developer/dalefonlogin/assets/83847147/4eda010a-093b-400b-b6db-5f8a6ea7a00f)
 
- Tabla para lenguajes usados.svg…]()
+
 
 
 </br>
