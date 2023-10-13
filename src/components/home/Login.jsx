@@ -9,8 +9,10 @@ import TextField from "@mui/material/TextField";
 import CreateAccount from "./CreateAccount";
 import ArrowBack from "./ArrowBack";
 import MessagesForm from "./MessagesForm";
+import { useRouter } from "next/navigation";
 
 function Login() {
+  const router = useRouter();
   const [loginChange, setLoginChange] = useState("Inicio");
   const [messageForm, setmessageForm] = useState("none");
   const [dataUser, setDataUser] = useState({
@@ -81,6 +83,7 @@ function Login() {
         setTimeout(() => {
           setmessageForm("none");
         }, 5000);
+        router.push(`/${dataUser.user}`/* , query:{dataUser2: dataUser} */)
       } else {
         setmessageForm("danger-user");
         setTimeout(() => {
@@ -131,8 +134,8 @@ localStorage.clear(); */
               <CreateAccount
                 handleRegistration={(e) => handleRegistration(e)}
                 dataUser={dataUser}
-                handleInputChange={() => {
-                  handleInputChange;
+                handleInputChange={(e) => {
+                  handleInputChange(e);
                 }}
                 setDataUser={(e) => {
                   setDataUser(e);

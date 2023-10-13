@@ -13,27 +13,32 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import dayjs from "dayjs";
 
-//Icons 
+//Icons
 import { AiOutlineCloudUpload } from "react-icons/ai";
 
-function CreateAccount({handleRegistration, dataUser, handleInputChange,setDataUser }) {
-    const handleImageUpload = (event) => {
-        const selectedFile = event.target.files[0];
-        if (selectedFile) {
-          const imageUrl = URL.createObjectURL(selectedFile);
-          setDataUser({
-            ...dataUser,
-            image: imageUrl,
-          });
-        }
-      };
+function CreateAccount({
+  handleRegistration,
+  dataUser,
+  handleInputChange,
+  setDataUser,
+}) {
+  const handleImageUpload = (event) => {
+    const selectedFile = event.target.files[0];
+    if (selectedFile) {
+      const imageUrl = URL.createObjectURL(selectedFile);
+      setDataUser({
+        ...dataUser,
+        image: imageUrl,
+      });
+    }
+  };
 
-      const handleInputDate = (date) => {
-        setDataUser({
-          ...dataUser,
-          date: date,
-        });
-      };
+  const handleInputDate = (date) => {
+    setDataUser({
+      ...dataUser,
+      date: date,
+    });
+  };
   return (
     <div>
       <form onSubmit={handleRegistration}>
@@ -182,6 +187,7 @@ function CreateAccount({handleRegistration, dataUser, handleInputChange,setDataU
           <div className="mt-4 text-end d-flex justify-content-end align-items-end">
             <button
               type="submit"
+              onClick={()=>console.log(dataUser)}
               className="btn-home shadow b-radius-8 txt-color-purple fw-500 fs-5"
             >
               Registrarte
