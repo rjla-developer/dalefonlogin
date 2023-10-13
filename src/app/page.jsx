@@ -39,31 +39,18 @@ function Home() {
           </div>
         </div>
 
-        <div className="col-12 d-block d-xl-none text-center mt-3 order-first">
-          <Image
-            src={logo}
-            className=""
-            width={50}
-            height={50}
-            alt="logo-Dalefon"
-          />
-          <div className="mt-3">
-            <button className="btn-home b-radius-8 txt-color-purple fw-500 fs-6 me-5">
-              Acceder
-            </button>
-            <button className="btn-home b-radius-8 txt-color-purple fw-500 fs-6">
-              Crear cuenta
-            </button>
-          </div>
-        </div>
-
-        <div className="col-5 d-none d-xl-flex align-items-center justify-content-center my-5 pt-5 my-lg-0 pt-lg-0">
-          <div className="text-center my-5 my-lg-0 py-2 py-lg-0">
-            <Image src={logo} width={130} height={130} alt="logo-Dalefon" />
+        <div className="col-12 col-xl-5 order-first order-xl-last mt-4 mt-xl-0">
+          <div className="text-center">
+            <div className="d-block d-xl-none">
+              <Image src={logo} width={50} height={50} alt="logo-Dalefon" />
+            </div>
+            <div className="d-none d-xl-block">
+              <Image src={logo} width={130} height={130} alt="logo-Dalefon" />
+            </div>
+           
             <Login />
           </div>
         </div>
-        
       </div>
     </div>
   );

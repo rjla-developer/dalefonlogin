@@ -83,7 +83,7 @@ function Login() {
         setTimeout(() => {
           setmessageForm("none");
         }, 5000);
-        router.push(`/${dataUser.user}`/* , query:{dataUser2: dataUser} */)
+        router.push(`/${dataUser.user}` /* , query:{dataUser2: dataUser} */);
       } else {
         setmessageForm("danger-user");
         setTimeout(() => {
@@ -106,23 +106,41 @@ localStorage.clear(); */
   return (
     <>
       {loginChange == "Inicio" ? (
-        <div id="Inicio">
-          <p className="fw-700 fs-2 text-white mt-4">¿Ya tienes cuenta?</p>
-          <div className="mx-3 mt-4">
-            <button
-              onClick={() => setLoginChange("Login")}
-              className="btn-home shadow b-radius-8 txt-color-purple fw-500 fs-5 me-5"
-            >
-              Iniciar sesión
-            </button>
-            <button
-              onClick={() => setLoginChange("Crear cuenta")}
-              className="btn-home shadow b-radius-8 txt-color-purple fw-500 fs-5"
-            >
-              Crear cuenta
-            </button>
+        <>
+          <div className="mt-3">
+            <div className="d-none d-xl-block mx-3">
+              <p className="fw-700 fs-2 text-white">¿Ya tienes cuenta?</p>
+              <button
+                onClick={() => setLoginChange("Login")}
+                className="btn-home shadow b-radius-8 txt-color-purple fw-500 fs-5 me-5"
+              >
+                Iniciar sesión
+              </button>
+              <button
+                onClick={() => setLoginChange("Crear cuenta")}
+                className="btn-home shadow b-radius-8 txt-color-purple fw-500 fs-5"
+              >
+                Crear cuenta
+              </button>
+            </div>
+
+            <div className="d-block d-xl-none">
+              <p className="fw-700 fs-4 text-white">¿Ya tienes cuenta?</p>
+              <button
+                onClick={() => setLoginChange("Login")}
+                className="btn-home shadow b-radius-8 txt-color-purple fw-500 fs-6 me-5"
+              >
+                Acceder
+              </button>
+              <button
+                onClick={() => setLoginChange("Crear cuenta")}
+                className="btn-home shadow b-radius-8 txt-color-purple fw-500 fs-6"
+              >
+                Crear cuenta
+              </button>
+            </div>
           </div>
-        </div>
+        </>
       ) : (
         <div className="b-radius-8 shadow background-purple mt-3 text-start mb-4">
           {loginChange == "Crear cuenta" ? (
@@ -186,10 +204,10 @@ localStorage.clear(); */
                     </p>
                     <button
                       type="submit"
-                      /* href={messageForm === "success-user" ? "/dashboard" : "/"} */
                       className="btn-home shadow b-radius-8 txt-color-purple text-decoration-none d-flex align-items-center justify-content-center"
                     >
-                      <p className="fw-500 fs-5 mb-0">Acceder</p>
+                      <p className="fw-500 fs-5 mb-0 d-none d-xl-block">Acceder</p>
+                      <p className="fw-500 fs-6 mb-0 d-block d-xl-none">Acceder</p>
                     </button>
                   </div>
                 </form>
@@ -239,7 +257,14 @@ localStorage.clear(); */
                   <button
                     type="submit"
                     onClick={() => setLoginChange("Login")}
-                    className="btn-home shadow b-radius-8 txt-color-purple fw-500 fs-5"
+                    className="btn-home shadow b-radius-8 d-none d-xl-block txt-color-purple fw-500 fs-5"
+                  >
+                    Cambiar
+                  </button>
+                  <button
+                    type="submit"
+                    onClick={() => setLoginChange("Login")}
+                    className="btn-home shadow b-radius-8 d-block d-xl-none txt-color-purple fw-500 fs-6"
                   >
                     Cambiar
                   </button>

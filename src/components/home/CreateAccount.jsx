@@ -188,7 +188,14 @@ function CreateAccount({
             <button
               type="submit"
               onClick={()=>console.log(dataUser)}
-              className="btn-home shadow b-radius-8 txt-color-purple fw-500 fs-5"
+              className="btn-home shadow b-radius-8 d-none d-xl-block txt-color-purple fw-500 fs-5"
+            >
+              Registrarte
+            </button>
+            <button
+              type="submit"
+              onClick={()=>console.log(dataUser)}
+              className="btn-home shadow b-radius-8 d-block d-xl-none txt-color-purple fw-500 fs-6"
             >
               Registrarte
             </button>
