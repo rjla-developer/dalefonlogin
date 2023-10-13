@@ -48,7 +48,7 @@
   position: absolute;
   top: 3rem;
   right: 2rem;
-  width: 25rem !important;
+  width: 15rem !important;
 }
 
 
@@ -63,5 +63,12 @@
   .btn-home {
     width: 10rem;
     height: 3rem;
+  }
+
+  .message-form {
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    width: 25rem !important;
   }
 }

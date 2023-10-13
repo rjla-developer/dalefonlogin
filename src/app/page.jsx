@@ -39,7 +39,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="col-12 col-xl-5 order-first order-xl-last mt-4 mt-xl-0">
+        <div className="col-12 col-xl-5 order-first order-xl-last pt-4 pt-xl-0 d-flex align-items-center justify-content-center">
           <div className="text-center">
             <div className="d-block d-xl-none">
               <Image src={logo} width={50} height={50} alt="logo-Dalefon" />
